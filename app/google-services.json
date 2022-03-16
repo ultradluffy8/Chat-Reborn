@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "429300639359",
+    "project_id": "chat-reborn",
+    "storage_bucket": "chat-reborn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429300639359:android:618af0ff7943d07b11814a",
+        "android_client_info": {
+          "package_name": "com.example.chatreborn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429300639359-bj0u8gm0v390g5eab477lb1l85kulpci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8nnCdGGfuXT5qvAsWRvoNorYtT8UoP9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429300639359-bj0u8gm0v390g5eab477lb1l85kulpci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

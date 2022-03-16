@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpReborn">
+
+    <ImageView
+        android:id="@+id/signup_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/lets_have_fun" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/sign_up_name_cardView"
+        style="@style/CardView.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/signup_logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/txt_name_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:cursorVisible="true"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/light_blue_shade1"
+            android:textColorHint="@color/black"
+            android:textIsSelectable="true"
+            android:background="@drawable/border_backi"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/login_email_cardView"
+        style="@style/CardView.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/sign_up_name_cardView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/txt_email_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:cursorVisible="true"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColor="@color/light_blue_shade1"
+            android:textColorHint="@color/black"
+            android:textIsSelectable="true" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/login_password_cardView"
+        style="@style/CardView.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/login_email_cardView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/txt_password_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:cursorVisible="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/light_blue_shade1"
+            android:textColorHint="@color/black" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_sign_up"
+        style="@style/ShapeAppearance.Neumorph.Button"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/login_password_cardView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Sign Up"
+        android:textColor="@color/light_blue_shade1"
+        android:textIsSelectable="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_already_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sign_up"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="7dp"
+        android:text="Already have account"
+        android:textColor="@color/black_light_shade2"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
